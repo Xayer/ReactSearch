@@ -4,16 +4,20 @@ import List from "../components/lists/list";
 
 class Lists extends React.Component {
   render() {
-    const lists = this.props.data;
+    const lists = this.props.lists;
+    console.log(lists);
 
-    lists.map(list => <List title={list.title} items={list.items} />);
-    return [lists];
+    if (!lists) {
+      return <span>no results</span>;
+    }
+
+    return lists.map(list => <List title={list.title} items={list.items} />);
   }
 }
 
 const mapStateToProps = state => {
   return {
-    data: state.data
+    lists: state.lists
   };
 };
 

@@ -17,7 +17,6 @@ export default function ListReducer(state = [], action) {
           };
         }
       );
-      console.log(formattedListData);
       return formattedListData;
     default:
       return state;
