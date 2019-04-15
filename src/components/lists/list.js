@@ -11,7 +11,7 @@ export default class List extends React.Component {
     const listItems = items.map(item => (
       <ListItem
         title={item.title}
-        label={item.subtitle}
+        label={item.label}
         imageUrl={item.imageUrl}
       />
     ));
