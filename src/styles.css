@@ -18,6 +18,31 @@ body {
   display: grid;
 }
 
+header {
+  display: grid;
+  background-color: #181c22;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  display: grid;
+  align-self: start;
+  justify-self: start;
+  margin: 0;
+  padding: 0;
+}
+
+header input {
+  align-self: center;
+  justify-self: stretch;
+  font-size: 125%;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  padding: 0.25rem;
+}
+
 section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -28,6 +53,9 @@ section {
 section h1 {
   grid-column-start: 1;
   grid-column-end: 3;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
 }
 
 section article {
@@ -37,12 +65,6 @@ section article {
   grid-template-columns: 1fr;
   align-items: center;
   background-color: #181c22;
-}
-
-section article:first-of-type {
-  display: grid;
-  grid-column-start: 1;
-  grid-column-end: 3;
 }
 
 section article figure {

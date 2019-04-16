@@ -7,13 +7,14 @@ import RootReducer from "./reducers";
 import "./styles.css";
 import Lists from "./components/lists";
 import { fetchInitialListData } from "./actions";
-
+import Search from "./components/search";
 const store = createStore(RootReducer, applyMiddleware(thunkMiddleware));
 
 store.dispatch(fetchInitialListData());
 
 ReactDOM.render(
   <Provider store={store}>
+    <Search />
     <Lists />
   </Provider>,
   document.getElementById("root")

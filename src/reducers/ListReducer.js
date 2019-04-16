@@ -1,4 +1,4 @@
-import { FETCH_LIST_DATA, FETCH_INITIAL_LIST_DATA } from "../actions/types";
+import { SET_LIST_DATA, FETCH_INITIAL_LIST_DATA } from "../actions/types";
 
 export default function ListReducer(state = [], action) {
   switch (action.type) {
@@ -18,6 +18,8 @@ export default function ListReducer(state = [], action) {
         }
       );
       return formattedListData;
+    case SET_LIST_DATA:
+      return action.data;
     default:
       return state;
   }

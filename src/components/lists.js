@@ -5,7 +5,6 @@ import List from "../components/lists/list";
 class Lists extends React.Component {
   render() {
     const lists = this.props.lists;
-    console.log(lists);
 
     if (!lists) {
       return <span>no results</span>;

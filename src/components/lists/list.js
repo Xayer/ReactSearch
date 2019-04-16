@@ -8,6 +8,9 @@ export default class List extends React.Component {
 
   render() {
     const { title, items } = this.props;
+    if (items.length === 0) {
+      return null;
+    }
     const listItems = items.map(item => (
       <ListItem
         title={item.title}
