@@ -94,3 +94,14 @@ section article figure img {
   height: auto;
   margin: 0;
 }
+
+@media all and (max-width: 768px) {
+  header {
+    grid-template-columns: auto;
+  }
+
+  section article {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
