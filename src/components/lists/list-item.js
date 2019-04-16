@@ -10,7 +10,7 @@ export default class ListItem extends React.Component {
     return (
       <article>
         <h1>{title}</h1>
-        <span>{label}</span>
+        <h2>{label}</h2>
         {imageUrl ? (
           <figure>
             <img src={imageUrl} />

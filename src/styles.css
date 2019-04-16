@@ -61,7 +61,7 @@ section h1 {
 section article {
   display: grid;
   width: 100%;
-  grid-template-rows: auto 0.5rem 1fr;
+  grid-template-rows: auto auto auto;
   grid-template-columns: 1fr;
   align-items: center;
   background-color: #181c22;
@@ -76,21 +76,17 @@ section article figure {
 }
 
 section article span {
-  grid-row-start: 2;
-  padding: 0.5rem 0.75rem;
-  display: grid;
-  align-self: start;
-  justify-self: start;
-  transform: translateY(-112%);
-  font-size: 1rem;
-  font-weight: 500;
-  background-color: #1561d3;
+  background-color: #1161ca;
+}
+
+section article h1,
+section article h2 {
+  margin: 0;
+  padding: 0 1rem 1rem 1rem;
 }
 
 section article h1 {
   font-size: 2rem;
-  margin: 0;
-  padding: 0 1rem 1rem 1rem;
 }
 section article figure img {
   max-width: 100%;
